@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 60vh;
+    background-image: url(./assets/halie-west-25xggax4bSA-unsplash\ \(1\).jpg) ;
+    background-size: cover;
+}
+
+img {
+    width: 15vh;
+    height: 15vh;
+    /* margin:32px; */
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    background-color: rgba(4, 2, 2, 0.4);
+    font-weight: bold;
+    flex-grow: 1;
+}  
+
+#logo-p {
+    font-size: 48px;    
+}
+
+
+.form-c {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #E5E7EB;
+}
+
+
+.header, .form, .footer{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 32px 0 32px;
+    margin: 16px 32px 0 32px;
+}
+
+.footer {
+    margin: 16px;
+    padding: 16px;
+    justify-content: flex-start;
+    font-size: 20px;
+}
+
+
+.form {
+    background-color: white;
+    justify-content: flex-start;
+    border: 2px solid #797e83;
+    border-radius: 10px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+    margin: 16px 0;
+
+}
+
+.formele{
+
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: flex-start; /* To avoid stretching */
+    margin-bottom: 16px;
+    
+}
+
+.formele label {
+    margin-bottom: 15px;
+    text-align: right;
+    width: 190px;
+    margin-top: 7px;
+    padding-right: 20px;
+    font-size: 16px;
+}
+
+.formele input[type='text'], .formele input[type='email'], .formele input[type='password'], .formele input[type='tel'] {
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    padding: 7px;
+    font-size: 14px;
+    width: 250px;
+    height: initial;
+    font-size: 20px;
+    outline: none;
+}
+
+.formele label:hover {
+    cursor: pointer;
+}
+
+
+button {
+    background-color: #596D48;
+    color: white;
+    width: 230px;
+    padding: 16px;
+    font-size: 16px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    cursor: pointer;
+    background-color: #36521d;
+}
+
+a {
+    color: #36521d;
+    text-decoration: none;
+}
+
+.formele input:focus {
+    border: 3px solid rgb(17, 17, 145);
+}
+
+.formele input:valid {
+    outline: none;
+    border: 3px solid greenyellow;
+}
+
+
